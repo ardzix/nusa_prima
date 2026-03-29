@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-poppins bg-white text-gray-800 antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-gradient-to-r from-blue-700 to-navy-900
+           text-white font-semibold px-7 py-3 rounded-full shadow-lg
+           hover:shadow-blue-500/40 hover:scale-105 active:scale-100
+           transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white font-semibold
+           px-7 py-3 rounded-full hover:bg-white hover:text-navy-800
+           transition-all duration-300 cursor-pointer;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-2 hover:shadow-2xl transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .gradient-navy {
+    @apply bg-gradient-to-br from-navy-900 via-blue-800 to-navy-700;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #1e40af; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #1e3a8a; }
