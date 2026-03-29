@@ -43,11 +43,10 @@ export const sectors = [
 
 // ─── Product Features ─────────────────────────────────────────────────────────
 export const productFeatures = [
-  { text: 'Optimasi daya secara real-time untuk beban induktif dan kapasitif' },
-  { text: 'Stabilkan tegangan listrik dan kurangi lonjakan arus' },
-  { text: 'Hemat biaya listrik hingga 20–40% per bulan' },
-  { text: 'Memperpanjang umur peralatan elektronik dan motor listrik' },
-  { text: 'Ramah lingkungan – mengurangi emisi karbon' },
+  { text: 'Mengoptimalkan penggunaan daya listrik' },
+  { text: 'Mengurangi energi terbuang' },
+  { text: 'Menstabilkan arus dan tegangan listrik' },
+  { text: 'Menekan biaya listrik secara signifikan' },
 ]
 
 // ─── Advantages ───────────────────────────────────────────────────────────────
@@ -92,11 +91,11 @@ export const advantages = [
 
 // ─── Mission List ─────────────────────────────────────────────────────────────
 export const missions = [
-  'Menghadirkan solusi efisiensi energi berkualitas tinggi yang terjangkau untuk semua segmen bisnis.',
-  'Membangun kemitraan strategis dengan klien berbasis kepercayaan, transparansi, dan hasil nyata.',
-  'Terus berinovasi dalam teknologi hemat energi untuk menjawab tantangan masa depan.',
-  'Memberdayakan dunia usaha Indonesia menuju operasional yang lebih efisien dan berkelanjutan.',
-  'Mendukung tujuan net-zero emission Indonesia melalui produk dan layanan ramah lingkungan.',
+  'Menyediakan produk penghemat energi dengan teknologi terbaik dan berkualitas tinggi.',
+  'Membantu pelanggan mengoptimalkan penggunaan energi dan menekan biaya operasional.',
+  'Memberikan layanan profesional mulai dari konsultasi, analisis, hingga implementasi.',
+  'Mendukung terciptanya lingkungan yang lebih hemat energi dan ramah lingkungan.',
+  'Membangun kemitraan jangka panjang yang saling menguntungkan dengan pelanggan.',
 ]
 
 // ─── Company Values ───────────────────────────────────────────────────────────
@@ -135,26 +134,32 @@ export const values = [
 export const targetMarkets = [
   {
     id: 1,
-    title: 'Pabrik & Manufaktur',
-    description: 'Penghematan signifikan pada motor-motor industri dan sistem produksi.',
+    title: 'Industri Manufaktur',
+    description: 'Penghematan signifikan pada motor-motor industri dan sistem produksi manufaktur.',
     image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&q=80',
   },
   {
     id: 2,
-    title: 'Hotel & Properti',
-    description: 'Kurangi biaya energi operasional hotel hingga 35% setiap bulannya.',
+    title: 'Hotel & Hospitality',
+    description: 'Tekan biaya energi operasional hotel tanpa mengorbankan kenyamanan tamu.',
     image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80',
   },
   {
     id: 3,
-    title: 'Rumah Sakit',
-    description: 'Suplai daya stabil dan efisien untuk peralatan medis kritis.',
+    title: 'Rumah Sakit & Fasilitas Kesehatan',
+    description: 'Suplai daya stabil dan efisien untuk mendukung peralatan medis kritis.',
     image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=600&q=80',
   },
   {
     id: 4,
-    title: 'Pusat Perbelanjaan',
-    description: 'Optimalkan konsumsi energi HVAC, eskalator, dan sistem pencahayaan mall.',
+    title: 'Gedung Perkantoran',
+    description: 'Optimalkan konsumsi energi gedung perkantoran modern untuk efisiensi operasional jangka panjang.',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80',
+  },
+  {
+    id: 5,
+    title: 'Pusat Perbelanjaan & Komersial',
+    description: 'Optimalkan konsumsi energi HVAC, eskalator, dan sistem pencahayaan area komersial.',
     image: 'https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&q=80',
   },
 ]

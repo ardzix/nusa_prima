@@ -66,16 +66,21 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="mt-16 grid grid-cols-3 gap-6 sm:gap-10">
+          {/* Key Features */}
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-10 ">
             {[
-              { value: '500+', label: 'Klien Aktif' },
-              { value: '20–40%', label: 'Hemat Energi' },
-              { value: '15+', label: 'Tahun Pengalaman' },
+              { title: 'Teknologi Jepang', subtitle: 'Mutu Unggul & Teruji', icon: 'lucide:award' },
+              { title: 'Efisiensi Energi', subtitle: 'Penggunaan Daya Optimal', icon: 'lucide:zap' },
+              { title: 'Hemat Biaya', subtitle: 'Penghematan Terukur', icon: 'lucide:trending-down' },
             ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-3xl sm:text-4xl font-bold text-white">{stat.value}</div>
-                <div className="text-blue-200 text-sm mt-1">{stat.label}</div>
+              <div key={stat.title} className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center flex-shrink-0">
+                  <Icon icon={stat.icon} className="text-cyan-300 w-6 h-6" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-white">{stat.title}</div>
+                  <div className="text-blue-200 text-sm mt-0.5">{stat.subtitle}</div>
+                </div>
               </div>
             ))}
           </div>

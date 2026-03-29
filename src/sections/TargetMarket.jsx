@@ -13,7 +13,7 @@ const TargetMarket = () => {
           />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {targetMarkets.map((market) => (
             <div
               key={market.id}

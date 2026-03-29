@@ -24,12 +24,11 @@ const VisionMission = () => {
                 <span className="text-blue-200 font-semibold text-sm uppercase tracking-wide">Visi</span>
               </div>
               <h3 className="text-white text-2xl font-bold leading-snug mb-6">
-                Menjadi perusahaan solusi efisiensi energi terdepan di Asia Tenggara pada tahun 2030.
+                Menjadi perusahaan terdepan di Indonesia dalam penyediaan solusi efisiensi energi yang inovatif, terpercaya, dan berkelanjutan.
               </h3>
               <p className="text-blue-200 text-sm leading-relaxed">
-                Kami bercita-cita menjadi pemimpin regional dalam industri efisiensi energi,
-                mendorong transformasi berkelanjutan di seluruh kawasan melalui inovasi dan
-                teknologi terbaik dunia.
+                Kami berkomitmen menghadirkan teknologi efisiensi energi terbaik untuk mendukung
+                pertumbuhan bisnis yang efisien dan ramah lingkungan bagi seluruh pelaku industri di Indonesia.
               </p>
             </div>
           </div>

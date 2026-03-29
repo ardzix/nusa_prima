@@ -48,7 +48,7 @@ const Product = () => {
             </ul>
 
             {/* Specs strip */}
-            <div className="grid grid-cols-3 gap-4 mb-10">
+            {/* <div className="grid grid-cols-3 gap-4 mb-10">
               {[
                 { label: 'Kapasitas', value: '10–2000 kVA' },
                 { label: 'Garansi', value: '5 Tahun' },
@@ -59,7 +59,7 @@ const Product = () => {
                   <div className="text-gray-500 text-xs mt-0.5">{spec.label}</div>
                 </div>
               ))}
-            </div>
+            </div> */}
 
             <a
               href="#contact"

@@ -2,9 +2,9 @@ import { Icon } from '@iconify/react'
 import SectionTitle from '../components/SectionTitle'
 
 const features = [
-  { icon: 'lucide:check-circle', text: 'Berdiri sejak 2008, melayani 500+ klien korporat di Indonesia' },
-  { icon: 'lucide:globe',        text: 'Jaringan distribusi mencakup 20+ kota besar di seluruh nusantara' },
-  { icon: 'lucide:users',        text: 'Tim profesional bersertifikat dengan pengalaman lebih dari 15 tahun' },
+  { icon: 'lucide:trending-down', text: 'Membantu pelanggan dalam meningkatkan efisiensi energi dan menurunkan biaya operasional' },
+  { icon: 'lucide:building',      text: 'Penyedia solusi handal untuk gedung perkantoran, pabrik, hotel, hingga rumah sakit' },
+  { icon: 'lucide:leaf',          text: 'Mendukung implementasi konsep green building dan keberlanjutan lingkungan' },
 ]
 
 const About = () => {
@@ -24,8 +24,8 @@ const About = () => {
             </div>
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 z-20 max-w-[200px]">
-              <div className="text-4xl font-bold text-blue-700">15+</div>
-              <div className="text-sm text-gray-500 mt-1">Tahun berpengalaman di industri energi</div>
+              <div className="text-4xl font-bold text-blue-700">100%</div>
+              <div className="text-sm text-gray-500 mt-1">Komitmen Efisiensi Energi</div>
             </div>
             {/* Decorative */}
             <div className="absolute -top-6 -left-6 w-48 h-48 bg-blue-100 rounded-2xl -z-10" />
@@ -41,15 +41,15 @@ const About = () => {
 
             <p className="text-gray-600 leading-relaxed mb-6">
               PT Nusa Prima Energi Indonesia adalah perusahaan spesialis solusi hemat energi
-              yang berdiri sejak 2008. Kami berkomitmen menghadirkan teknologi mutakhir berbasis
+              yang berdiri sejak 2024. Kami berkomitmen menghadirkan teknologi mutakhir berbasis
               riset Jepang untuk membantu bisnis Anda memangkas biaya operasional secara
               signifikan tanpa mengorbankan performa.
             </p>
-            <p className="text-gray-600 leading-relaxed mb-10">
+            {/* <p className="text-gray-600 leading-relaxed mb-10">
               Dengan rekam jejak lebih dari 500 proyek sukses, kami telah dipercaya oleh
               perusahaan-perusahaan terkemuka di berbagai sektor untuk mengimplementasikan
               solusi energi yang berkelanjutan dan terukur.
-            </p>
+            </p> */}
 
             <ul className="space-y-4">
               {features.map(({ icon, text }) => (
