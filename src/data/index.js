@@ -54,38 +54,32 @@ export const advantages = [
   {
     id: 1,
     title: 'Teknologi Jepang',
-    description: 'Dikembangkan dengan standar engineering Jepang yang terkenal presisi dan kualitas tinggi.',
-    icon: 'lucide:zap',
+    description: 'Teknologi Jepang yang terbukti handal dengan standar kualitas terbaik.',
+    icon: 'lucide:award',
   },
   {
     id: 2,
-    title: 'Hemat Biaya',
-    description: 'ROI tercapai dalam 6–18 bulan dengan penghematan energi nyata yang terukur.',
+    title: 'Efisiensi Biaya',
+    description: 'Memberikan efisiensi biaya operasional perusahaan untuk jangka panjang.',
     icon: 'lucide:trending-down',
   },
   {
     id: 3,
     title: 'Instalasi Mudah',
-    description: 'Proses pemasangan cepat tanpa perlu menghentikan operasional bisnis Anda.',
+    description: 'Proses instalasi mudah dan dirancang dengan minim kebutuhan perawatan.',
     icon: 'lucide:wrench',
   },
   {
     id: 4,
-    title: 'Minim Maintenance',
-    description: 'Dirancang untuk ketahanan jangka panjang dengan kebutuhan perawatan yang sangat minimal.',
-    icon: 'lucide:shield-check',
+    title: 'Varian Sektor',
+    description: 'Dapat diterapkan dengan praktis di berbagai jenis sektor komersial maupun industri.',
+    icon: 'lucide:building',
   },
   {
     id: 5,
     title: 'Sustainability',
-    description: 'Berkontribusi pada masa depan yang lebih hijau dengan mengurangi jejak karbon bisnis Anda.',
+    description: 'Mendukung program efisiensi energi dan keberlanjutan lingkungan berkelanjutan.',
     icon: 'lucide:leaf',
-  },
-  {
-    id: 6,
-    title: 'Garansi Resmi',
-    description: 'Dilindungi garansi produk resmi dan dukungan purna jual dari tim ahli kami.',
-    icon: 'lucide:award',
   },
 ]
 
