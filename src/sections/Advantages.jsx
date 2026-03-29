@@ -23,9 +23,9 @@ const Advantages = () => {
                          rounded-2xl p-7 card-hover cursor-default"
             >
               {/* Number watermark */}
-              <span className="absolute top-5 right-5 text-5xl font-black text-white/5 select-none">
+              {/* <span className="absolute top-5 right-5 text-5xl font-black text-white/5 select-none">
                 {String(idx + 1).padStart(2, '0')}
-              </span>
+              </span> */}
 
               {/* Icon */}
               <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4
