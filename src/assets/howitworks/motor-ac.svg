@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 120" fill="none">
+  <!-- === Motor (top-left) === -->
+  <g transform="translate(0, 5)">
+    <!-- Motor body -->
+    <ellipse cx="40" cy="35" rx="30" ry="25" fill="#C8CED6" stroke="#8A94A2" stroke-width="1.5"/>
+    <ellipse cx="40" cy="35" rx="22" ry="18" fill="#B0B8C4" stroke="#8A94A2" stroke-width="1"/>
+    <circle cx="40" cy="35" r="6" fill="#9AA3AD" stroke="#7D8794" stroke-width="1"/>
+    <!-- Shaft -->
+    <rect x="67" y="30" width="15" height="10" rx="2" fill="#9AA3AD" stroke="#7D8794" stroke-width="1"/>
+    <!-- Motor feet -->
+    <rect x="18" y="57" width="12" height="4" rx="1" fill="#8A94A2"/>
+    <rect x="48" y="57" width="12" height="4" rx="1" fill="#8A94A2"/>
+  </g>
+
+  <!-- === Air Conditioner (bottom-right) === -->
+  <g transform="translate(30, 65)">
+    <!-- AC body -->
+    <rect x="0" y="0" width="90" height="35" rx="5" fill="#D4D9E0" stroke="#8A94A2" stroke-width="1.5"/>
+    <!-- Front panel -->
+    <rect x="5" y="5" width="80" height="12" rx="2" fill="#E8ECF0" stroke="#B0B8C4" stroke-width="1"/>
+    <!-- Ventilation slits -->
+    <line x1="10" y1="22" x2="80" y2="22" stroke="#B0B8C4" stroke-width="0.8"/>
+    <line x1="10" y1="25" x2="80" y2="25" stroke="#B0B8C4" stroke-width="0.8"/>
+    <line x1="10" y1="28" x2="80" y2="28" stroke="#B0B8C4" stroke-width="0.8"/>
+    <!-- LED indicator -->
+    <circle cx="78" cy="9" r="2" fill="#4CAF50"/>
+    <!-- Display panel -->
+    <rect x="60" y="6" width="14" height="9" rx="1" fill="#A8B2BC" opacity="0.6"/>
+  </g>
+</svg>

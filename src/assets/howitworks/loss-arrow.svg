@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 50" fill="none">
+  <!-- Arrow body -->
+  <polygon points="5,18 40,18 40,10 58,25 40,40 40,32 5,32" fill="#D4D9E0" stroke="#8A94A2" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- "loss" text -->
+  <text x="28" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#E53935">loss</text>
+</svg>

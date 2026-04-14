@@ -2,76 +2,109 @@ import { Icon } from '@iconify/react'
 import SectionTitle from '../components/SectionTitle'
 import { productFeatures } from '../data'
 
+const lineup = [
+  {
+    title: '3-Phase Individual Type',
+    desc: 'Dirancang khusus untuk kebutuhan industri dan fasilitas skala besar dengan sistem kelistrikan 3-fase.',
+    img: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&q=80',
+    type: 'Industrial'
+  },
+  {
+    title: 'Home & Store ecomo Series',
+    desc: 'Tersedia dalam ukuran S (5~30kVA) untuk fasilitas kecil/rumah, serta ukuran M~L untuk fasilitas menengah.',
+    img: 'https://images.unsplash.com/photo-1544724569-5f546fb6e665?w=600&q=80',
+    type: 'Komersial / Residensial'
+  }
+]
+
+const ecoFeatures = [
+    {
+      title: 'Pengurangan CO2',
+      desc: 'Dengan menghemat listrik menggunakan ecomo, kami mengurangi emisi CO2 dari pembakaran bahan bakar fosil dan berkontribusi pada pencegahan pemanasan global.',
+      icon: 'lucide:leaf'
+    },
+    {
+      title: 'Instalasi Mudah',
+      desc: 'Pemasangan sangat praktis dan cepat, dapat diselesaikan dalam waktu sekitar 30 menit.',
+      icon: 'lucide:settings-2'
+    },
+    {
+      title: 'Umur Desain 15 Tahun',
+      desc: 'Didesain secara khusus untuk memiliki umur operasional yang panjang hingga 15 tahun.',
+      icon: 'lucide:calendar-clock'
+    },
+    {
+      title: 'Aman & Terpercaya',
+      desc: 'Tidak ada listrik utama yang mengalir ke unit ecomo sehingga tidak menghasilkan panas. Daya disuplai langsung ke beban tanpa melalui ecomo.',
+      icon: 'lucide:shield-check'
+    },
+    {
+      title: 'Dapat Dipindahkan',
+      desc: 'Jika pabrik atau kantor direlokasi, ecomo dapat dilepas dan dipasang kembali ke lokasi yang baru.',
+      icon: 'lucide:move'
+    },
+    {
+      title: 'Garansi 7 Tahun',
+      desc: 'Kami sangat yakin dengan kualitas produk kami, sehingga kami memberikan garansi kualitas selama 7 tahun penuh.',
+      icon: 'lucide:award'
+    }
+]
+
 const Product = () => {
   return (
     <section id="product" className="section-padding bg-white">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Image */}
-          <div className="relative order-2 lg:order-1">
-            <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&q=80"
-                alt="ECOMO Power Saving Energy Device"
-                className="w-full h-96 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-navy-900/30 to-transparent" />
-            </div>
-
-            {/* Floating badge */}
-            <div className="absolute -top-5 -right-5 bg-gradient-to-br from-blue-600 to-navy-900
-                             text-white rounded-2xl shadow-xl p-5 z-20">
-              <div className="text-3xl font-bold">40%</div>
-              <div className="text-xs text-blue-200 mt-0.5">Maks. Penghematan</div>
-            </div>
-
-            <div className="absolute -bottom-5 -left-5 w-40 h-40 bg-blue-100 rounded-2xl -z-10" />
+        <div className="mb-24">
+          <div className="flex justify-center mb-10">
+            <SectionTitle
+              subtitle="Product "
+              title="Varian Produk ecomo"
+              description="ecomo hadir dalam berbagai tipe untuk memenuhi kebutuhan spesifik mulai dari fasilitas perumahan kecil hingga skala industri besar."
+              align="center"
+            />
           </div>
 
-          {/* Content */}
-          <div className="order-1 lg:order-2">
-            <SectionTitle
-              subtitle="Produk Unggulan"
-              title="ECOMO Power Saving Energy"
-              description="Teknologi penyimpan dan pengoptimal daya listrik generasi terbaru dengan algoritma cerdas berbasis riset Jepang."
-              align="left"
-            />
-
-            {/* Feature list */}
-            <ul className="space-y-4 mb-10">
-              {productFeatures.map((f) => (
-                <li key={f.text} className="flex items-start gap-3">
-                  <Icon icon="lucide:check-circle-2" width={22} height={22} className="text-blue-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700 text-sm leading-relaxed">{f.text}</span>
-                </li>
-              ))}
-            </ul>
-
-            {/* Specs strip */}
-            {/* <div className="grid grid-cols-3 gap-4 mb-10">
-              {[
-                { label: 'Kapasitas', value: '10–2000 kVA' },
-                { label: 'Garansi', value: '5 Tahun' },
-                { label: 'Sertifikasi', value: 'JIS / SNI' },
-              ].map((spec) => (
-                <div key={spec.label} className="bg-blue-50 rounded-xl p-4 text-center">
-                  <div className="font-bold text-navy-900 text-sm">{spec.value}</div>
-                  <div className="text-gray-500 text-xs mt-0.5">{spec.label}</div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {lineup.map((item, idx) => (
+              <div key={idx} className="bg-gray-50 rounded-3xl p-8 border border-gray-100 flex flex-col items-center text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <div className="h-56 w-full bg-white rounded-2xl mb-6 shadow-sm overflow-hidden flex items-center justify-center p-4">
+                   <img src={item.img} alt={item.title} className="w-full h-full object-cover rounded-xl" />
                 </div>
-              ))}
-            </div> */}
-
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800
-                         text-white font-semibold px-7 py-3 rounded-full shadow-md
-                         hover:shadow-blue-400/40 hover:scale-105 transition-all duration-300"
-            >
-              Minta Penawaran
-              <Icon icon="lucide:arrow-right" width={18} height={18} />
-            </a>
+                <span className="text-blue-600 bg-blue-50 px-4 py-1.5 rounded-full text-xs font-bold mb-4">{item.type}</span>
+                <h3 className="text-2xl font-bold text-navy-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed max-w-sm">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
+
+        {/* === PART 3: Green Eco Features === */}
+        <div className="bg-blue-800 rounded-3xl p-8 lg:p-16 text-white relative overflow-hidden shadow-2xl">
+           {/* Decorative elements */}
+           <div className="absolute -top-32 -right-32 w-96 h-96 bg-white/10 rounded-full blur-3xl mix-blend-overlay"></div>
+           <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl mix-blend-overlay"></div>
+
+           <div className="relative z-10 text-center mb-16">
+             <div className="inline-block border-2 border-blue-900 rounded-full py-4 px-8 bg-blue-600 shadow-lg">
+               <h2 className="text-2xl lg:text-3xl font-black text-white m-0">
+                 Ecomo adalah unit penghemat daya yang mengurangi penggunaan listrik hingga 3-15%.
+               </h2>
+             </div>
+           </div>
+
+           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 relative z-10">
+             {ecoFeatures.map((feature, idx) => (
+                <div key={idx} className="flex flex-col">
+                  <div className="flex items-center gap-4 mb-4">
+                     <Icon icon={feature.icon} width={32} height={32} className="text-white bg-white/20 p-1.5 rounded-lg" />
+                     <h3 className="text-xl font-bold">{feature.title}</h3>
+                  </div>
+                  <p className="text-white/90 text-sm leading-relaxed">{feature.desc}</p>
+                </div>
+             ))}
+           </div>
+        </div>
+
       </div>
     </section>
   )

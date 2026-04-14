@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 110" fill="none">
+  <!-- Motor body -->
+  <ellipse cx="55" cy="60" rx="40" ry="35" fill="#C8CED6" stroke="#8A94A2" stroke-width="2"/>
+  <!-- Motor front face -->
+  <ellipse cx="55" cy="60" rx="30" ry="26" fill="#B0B8C4" stroke="#8A94A2" stroke-width="1.5"/>
+  <!-- Center circle -->
+  <circle cx="55" cy="60" r="8" fill="#9AA3AD" stroke="#7D8794" stroke-width="1.5"/>
+  <!-- Motor shaft right -->
+  <rect x="90" y="53" width="20" height="14" rx="2" fill="#9AA3AD" stroke="#7D8794" stroke-width="1.5"/>
+  <!-- Motor feet -->
+  <rect x="25" y="90" width="15" height="6" rx="1" fill="#8A94A2" stroke="#6B7580" stroke-width="1"/>
+  <rect x="65" y="90" width="15" height="6" rx="1" fill="#8A94A2" stroke="#6B7580" stroke-width="1"/>
+  <!-- Motor junction box top -->
+  <rect x="40" y="22" width="30" height="14" rx="3" fill="#9AA3AD" stroke="#7D8794" stroke-width="1.5"/>
+  <!-- "Electronic" label -->
+  <rect x="25" y="48" width="60" height="18" rx="3" fill="#4CAF50" opacity="0.85"/>
+  <text x="55" y="61" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Electronic</text>
+  <!-- Energy loss arrows (yellow scattered) -->
+  <g fill="#FFB300" opacity="0.9">
+    <polygon points="100,35 108,38 100,41" />
+    <polygon points="105,48 113,51 105,54" />
+    <polygon points="102,62 110,65 102,68" />
+    <polygon points="98,75 106,78 98,81" />
+    <polygon points="8,40 0,43 8,46" />
+    <polygon points="5,55 -3,58 5,61" />
+    <polygon points="8,70 0,73 8,76" />
+  </g>
+</svg>

@@ -4,17 +4,19 @@ import { sectors } from '../data'
 
 const Sectors = () => {
   return (
-    <section id="sectors" className="section-padding bg-gray-50">
+    <section id="sectors" className="section-padding gradient-navy">
       <div className="container-custom">
         <div className="flex justify-center">
           <SectionTitle
             subtitle="Sektor Bisnis"
             title="Kami Melayani Berbagai Sektor"
             description="Solusi energi kami dirancang untuk memenuhi kebutuhan spesifik setiap industri dengan pendekatan yang tepat sasaran."
+            light
+
           />
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {sectors.map((sector) => (
             <div
               key={sector.id}
@@ -27,7 +29,7 @@ const Sectors = () => {
                   alt={sector.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-900/90 via-navy-900/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/40 to-transparent" />
               </div>
 
               {/* Content */}

@@ -4,11 +4,14 @@ import About from './sections/About'
 import Sectors from './sections/Sectors'
 import Product from './sections/Product'
 import Advantages from './sections/Advantages'
+import HowItWorks from './sections/HowItWorks'
+import CaseStudy from './sections/CaseStudy'
 import VisionMission from './sections/VisionMission'
 import Values from './sections/Values'
 import TargetMarket from './sections/TargetMarket'
 import Contact from './sections/Contact'
 import Footer from './sections/Footer'
+import Distributor from './sections/Distributor'
 
 const App = () => {
   return (
@@ -19,10 +22,13 @@ const App = () => {
         <About />
         <Sectors />
         <Product />
-        <Advantages />
-        <VisionMission />
-        <Values />
-        <TargetMarket />
+        {/* <Advantages /> */}
+        <HowItWorks />
+        <CaseStudy />
+        {/* <VisionMission /> */}
+        {/* <Values /> */}
+        <Distributor />
+        {/* <TargetMarket /> */}
         <Contact />
       </main>
       <Footer />

@@ -2,9 +2,9 @@ import { Icon } from '@iconify/react'
 import SectionTitle from '../components/SectionTitle'
 
 const features = [
-  { icon: 'lucide:trending-down', text: 'Membantu pelanggan dalam meningkatkan efisiensi energi dan menurunkan biaya operasional' },
-  { icon: 'lucide:building',      text: 'Penyedia solusi handal untuk gedung perkantoran, pabrik, hotel, hingga rumah sakit' },
-  { icon: 'lucide:leaf',          text: 'Mendukung implementasi konsep green building dan keberlanjutan lingkungan' },
+  { icon: 'lucide:trending-down', text: 'Mendistribusikan ecomo — unit hemat daya yang mengurangi konsumsi listrik 5–15%' },
+  { icon: 'lucide:building',      text: 'Melayani gedung perkantoran, pabrik manufaktur, hotel, rumah sakit, dan department store' },
+  { icon: 'lucide:leaf',          text: 'Mendukung implementasi green building dan efisiensi energi jangka panjang yang berkelanjutan' },
 ]
 
 const About = () => {
@@ -24,8 +24,8 @@ const About = () => {
             </div>
             {/* Floating card */}
             <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-5 z-20 max-w-[200px]">
-              <div className="text-4xl font-bold text-blue-700">100%</div>
-              <div className="text-sm text-gray-500 mt-1">Komitmen Efisiensi Energi</div>
+              <div className="text-4xl font-bold text-blue-700">5–15%</div>
+              <div className="text-sm text-gray-500 mt-1">Penghematan Energi Terukur</div>
             </div>
             {/* Decorative */}
             <div className="absolute -top-6 -left-6 w-48 h-48 bg-blue-100 rounded-2xl -z-10" />
@@ -35,21 +35,15 @@ const About = () => {
           <div>
             <SectionTitle
               subtitle="Tentang Kami"
-              title="Mitra Terpercaya dalam Efisiensi Energi"
+              title="Mitra Terpercaya Distribusi ecomo di Indonesia"
               align="left"
             />
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              PT Nusa Prima Energi Indonesia adalah perusahaan spesialis solusi hemat energi
-              yang berdiri sejak 2024. Kami berkomitmen menghadirkan teknologi mutakhir berbasis
-              riset Jepang untuk membantu bisnis Anda memangkas biaya operasional secara
-              signifikan tanpa mengorbankan performa.
+              PT Nusa Prima Energi Indonesia adalah distributor resmi unit hemat daya <strong>ecomo</strong> —
+              produk berpaten dari <a href="https://hayabusa-holdings.com" className='underline text-blue-600' target="_blank" rel="noopener noreferrer"><strong>Hayabusa Holdings</strong></a>, Jepang.
+             Kami berkomitmen menghadirkan solusi efisiensi energi yang telah teruji secara global untuk membantu bisnis Anda memangkas biaya operasional secara signifikan.
             </p>
-            {/* <p className="text-gray-600 leading-relaxed mb-10">
-              Dengan rekam jejak lebih dari 500 proyek sukses, kami telah dipercaya oleh
-              perusahaan-perusahaan terkemuka di berbagai sektor untuk mengimplementasikan
-              solusi energi yang berkelanjutan dan terukur.
-            </p> */}
 
             <ul className="space-y-4">
               {features.map(({ icon, text }) => (
@@ -62,14 +56,7 @@ const About = () => {
               ))}
             </ul>
 
-            <a
-              href="#contact"
-              className="mt-8 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800
-                         text-white font-semibold px-7 py-3 rounded-full shadow-md
-                         hover:shadow-blue-400/40 hover:scale-105 transition-all duration-300"
-            >
-              Pelajari Lebih Lanjut
-            </a>
+   
           </div>
         </div>
       </div>
@@ -78,3 +65,4 @@ const About = () => {
 }
 
 export default About
+

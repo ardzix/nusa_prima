@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react'
+import ecomoLogo from '../assets/ecomo-logo-transparent.png'
 
 const Hero = () => {
   return (
@@ -28,21 +29,21 @@ const Hero = () => {
           <span className="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30
                            text-blue-200 text-sm font-semibold px-4 py-2 rounded-full mb-6 backdrop-blur-sm">
             <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-            Solusi Energi Terpercaya #1 di Indonesia
+            Solusi Hemat Energi Berteknologi Jepang
           </span>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Solusi{' '}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 flex flex-wrap items-center gap-x-4">
+            Next Generation{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
-              Efisiensi Energi
-            </span>{' '}
-            Masa Depan
+              Power Saving Unit
+            </span>
+            <img src={ecomoLogo} alt="ecomo" className="h-10 sm:h-12 lg:h-[60px] object-contain -mt-2 drop-shadow-md" />
           </h1>
 
           <p className="text-lg md:text-xl text-blue-100 leading-relaxed mb-10 max-w-2xl">
-            PT Nusa Prima Energi Indonesia hadir sebagai mitra strategis dalam menghadirkan
-            solusi hemat energi berbasis teknologi Jepang untuk perkantoran, industri, hotel,
-            dan rumah sakit di seluruh Indonesia.
+            PT Nusa Prima Energi Indonesia menghadirkan ecomo — unit hemat daya berteknologi
+            mineral Tourmaline & Ferrite paten Jepang yang mampu mengurangi konsumsi listrik
+            5–15% untuk perkantoran, industri, hotel, dan rumah sakit.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -69,9 +70,9 @@ const Hero = () => {
           {/* Key Features */}
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-10 ">
             {[
-              { title: 'Teknologi Jepang', subtitle: 'Mutu Unggul & Teruji', icon: 'lucide:award' },
-              { title: 'Efisiensi Energi', subtitle: 'Penggunaan Daya Optimal', icon: 'lucide:zap' },
-              { title: 'Hemat Biaya', subtitle: 'Penghematan Terukur', icon: 'lucide:trending-down' },
+              { title: 'Teknologi Paten Jepang', subtitle: 'Satsuki Co., Ltd. — Osaka', icon: 'lucide:award' },
+              { title: 'Hemat 5–15% Listrik', subtitle: 'Hasil terukur per instalasi', icon: 'lucide:zap' },
+              { title: '3.000+ Unit Terjual', subtitle: 'Sejak pertama kali 2003', icon: 'lucide:trending-down' },
             ].map((stat) => (
               <div key={stat.title} className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-blue-500/20 border border-blue-400/30 flex items-center justify-center flex-shrink-0">
@@ -101,3 +102,4 @@ const Hero = () => {
 }
 
 export default Hero
+
