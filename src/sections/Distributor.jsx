@@ -68,7 +68,7 @@ const Distributor = () => {
                 Lihat Sertifikat
               </a> */}
               <a 
-                href="https://hayabusa-holdings.com/case/ecomo/" 
+                href="https://hayabusa-holdings.com/case/ecomo/#:~:text=PT.Nusa%20Prima%20Energi%20Indonesia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white/80 hover:text-white px-4 py-3 font-semibold transition-colors group"

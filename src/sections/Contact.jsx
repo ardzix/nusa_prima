@@ -103,7 +103,7 @@ const Contact = () => {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    placeholder="+62 812 3456 7890"
+                    placeholder="+62 852-2224-4494"
                     className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm
                                text-gray-800 placeholder-gray-400 focus:outline-none
                                focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all"
