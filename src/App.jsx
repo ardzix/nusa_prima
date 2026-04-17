@@ -107,13 +107,14 @@ const App = () => {
       <main>
         <Hero />
         <About />
+        <VisionMission />
+
         <Sectors />
         <Product />
         <ProductSpecs />
         {/* <Advantages /> */}
         <HowItWorks />
         <CaseStudy />
-        {/* <VisionMission /> */}
         {/* <Values /> */}
         <Gallery />
         <Distributor />

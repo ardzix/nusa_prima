@@ -2,14 +2,15 @@ import { Icon } from '@iconify/react'
 import SectionTitle from '../components/SectionTitle'
 import { useSiteStore } from '../store/useSiteStore'
 
-import g1 from '../assets/galery_photo/image1.jpeg'
-import g2 from '../assets/galery_photo/image2.jpeg'
-import g3 from '../assets/galery_photo/image3.jpeg'
-import g4 from '../assets/galery_photo/image4.jpeg'
-import g5 from '../assets/galery_photo/image5.jpeg'
-import g6 from '../assets/galery_photo/image6.jpeg'
-import g7 from '../assets/galery_photo/image7.jpeg'
-import g8 from '../assets/galery_photo/image8.jpeg'
+import g1 from '../assets/case_study/image1.png'
+import g2 from '../assets/case_study/image2.png'
+import g3 from '../assets/case_study/image3.png'
+import g4 from '../assets/case_study/image4.png'
+import g5 from '../assets/case_study/image5.png'
+import g6 from '../assets/case_study/image6.png'
+import g7 from '../assets/case_study/image7.png'
+import g8 from '../assets/case_study/image8.png'
+import { caseStudies } from '../data'
 
 const galleryPhotos = [g1, g2, g3, g4, g5, g6, g7, g8]
 
@@ -23,31 +24,38 @@ const CaseStudy = () => {
   const description = caseData?.description
   const source = caseData?.extra?.source
 
-  const items = caseData?.items?.map((item, index) => {
-        try {
-          // Parsing: "Toyo Corporation (Jul 2018, 60kVA): 15% reduction"
-          const mainParts = item.title.split(':')
-          const infoPart = mainParts[0]
-          const reductionPart = mainParts[1]
+  // const items = caseData?.items?.map((item, index) => {
+  //       try {
+  //         // Parsing: "Toyo Corporation (Jul 2018, 60kVA): 15% reduction"
+  //         const mainParts = item.title.split(':')
+  //         const infoPart = mainParts[0]
+  //         const reductionPart = mainParts[1]
 
-          const name = infoPart.split('(')[0]?.trim() || "Company"
-          const meta = infoPart.split('(')[1]?.replace(')', '') || ""
-          const date = meta.split(',')[0]?.trim() || ""
-          const unit = meta.split(',')[1]?.trim() || ""
-          const reduction = reductionPart?.match(/\d+/)?.[0] || "0"
+  //         const name = infoPart.split('(')[0]?.trim() || "Company"
+  //         const meta = infoPart.split('(')[1]?.replace(')', '') || ""
+  //         const date = meta.split(',')[0]?.trim() || ""
+  //         const unit = meta.split(',')[1]?.trim() || ""
+  //         const reduction = reductionPart?.match(/\d+/)?.[0] || "0"
 
-          return {
-            id: item.id || index,
-            name,
-            installDate: date,
-            unit,
-            reduction,
+  //         return {
+  //           id: item.id || index,
+  //           name,
+  //           installDate: date,
+  //           unit,
+  //           reduction,
+  //           image: galleryPhotos[index % galleryPhotos.length]
+  //         }
+  //       } catch (e) {
+  //         return { id: index, name: item.title, installDate: '', unit: '', reduction: '0', image: galleryPhotos[index % galleryPhotos.length] }
+  //       }
+  //     }) || []
+
+      const items = caseStudies.map((val, index)=>{
+        return{
+          ...val,
             image: galleryPhotos[index % galleryPhotos.length]
-          }
-        } catch (e) {
-          return { id: index, name: item.title, installDate: '', unit: '', reduction: '0', image: galleryPhotos[index % galleryPhotos.length] }
         }
-      }) || []
+      })
 
   return (
     <section id="case-study" className="section-padding gradient-navy">
