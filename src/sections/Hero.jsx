@@ -1,9 +1,41 @@
+import { useState, useRef, useEffect } from 'react'
 import { useSiteStore } from '../store/useSiteStore'
 import { Icon } from '@iconify/react'
 import ecomoLogo from '../assets/ecomo-logo-transparent.png'
 import ecomoProduct from '../assets/ecomo_transparent.png'
 
+const downloadFiles = [
+  {
+    href: '/Ecomo-Pamphlet-EN.pdf',
+    filename: 'Ecomo Pamphlet (EN).pdf',
+    label: 'Brosur Produk',
+    lang: 'EN',
+    desc: 'Spesifikasi teknis & hasil uji',
+    icon: 'lucide:file-text',
+  },
+  {
+    href: '/Pamphlet.pdf',
+    filename: 'Ecomo Pamphlet.pdf',
+    label: 'Pamflet Produk',
+    lang: 'ID',
+    desc: 'Pengenalan produk & cara kerja',
+    icon: 'lucide:file-text',
+  },
+]
+
 const Hero = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
+
+  useEffect(() => {
+    const handler = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handler)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [])
   const getSectionData = useSiteStore((state) => state.getSectionData)
   const heroSection = getSectionData('hero')
   const heroData = heroSection?.blocks?.[0] || null
@@ -119,16 +151,59 @@ const Hero = () => {
                 <Icon icon="lucide:arrow-right" width={18} height={18}
                       className="group-hover:translate-x-1 transition-transform" />
               </a>
-              <a
-                href="/Ecomo-Pamphlet-EN.pdf"
-                download="Ecomo Pamphlet (EN).pdf"
-                className="inline-flex items-center justify-center gap-2.5 border border-white/25
-                           text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm
-                           hover:bg-white/10 hover:border-white/40 active:scale-[0.98] transition-all duration-300"
-              >
-                <Icon icon="lucide:download" width={18} height={18} />
-                Download E-Brosur
-              </a>
+              {/* Download dropdown */}
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setDropdownOpen((v) => !v)}
+                  className="group inline-flex items-center justify-center gap-2.5 border border-white/25
+                             text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm
+                             hover:bg-white/10 hover:border-white/40 active:scale-[0.98] transition-all duration-300"
+                >
+                  <Icon icon="lucide:download" width={18} height={18} />
+                  Download Material
+                  <Icon
+                    icon="lucide:chevron-down"
+                    width={15} height={15}
+                    className={`transition-transform duration-300 ${dropdownOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+
+                {/* Dropdown panel */}
+                {dropdownOpen && (
+                  <div
+                    className="absolute top-full mt-2 left-0 z-50 w-72
+                               bg-navy-900/95 backdrop-blur-xl border border-white/15
+                               rounded-2xl shadow-2xl shadow-black/40 p-2
+                               animate-fade-in-up"
+                    style={{ animationDuration: '0.15s' }}
+                  >
+                    {downloadFiles.map((file) => (
+                      <a
+                        key={file.href}
+                        href={file.href}
+                        download={file.filename}
+                        onClick={() => setDropdownOpen(false)}
+                        className="flex items-center gap-3.5 px-4 py-3.5 rounded-xl
+                                   hover:bg-white/8 active:bg-white/12
+                                   transition-colors duration-150 group/item"
+                      >
+                        <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-500/10
+                                        border border-blue-400/20 flex items-center justify-center flex-shrink-0">
+                          <Icon icon={file.icon} className="text-cyan-300 w-5 h-5" />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2">
+                            <span className="text-white text-sm font-semibold">{file.label}</span>
+                         
+                          </div>
+                          <p className="text-blue-200/60 text-xs mt-0.5 truncate">{file.desc}</p>
+                        </div>
+                    
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Stats row */}
