@@ -10,7 +10,7 @@ const downloadFiles = [
     filename: 'Ecomo Pamphlet (EN).pdf',
     label: 'Brosur Produk',
     lang: 'EN',
-    desc: 'Spesifikasi teknis & hasil uji',
+    desc: 'Overview singkat produk ecomo',
     icon: 'lucide:file-text',
   },
   {
@@ -18,7 +18,7 @@ const downloadFiles = [
     filename: 'Ecomo Pamphlet.pdf',
     label: 'Pamflet Produk',
     lang: 'ID',
-    desc: 'Pengenalan produk & cara kerja',
+    desc: 'Dokumen lengkap dengan spesifikasi teknis',
     icon: 'lucide:file-text',
   },
 ]

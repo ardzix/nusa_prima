@@ -293,13 +293,13 @@ export const contactInfo = [
   {
     id: 2,
     label: 'Telepon',
-    value: '+62 21 5555-0123',
+    value: '+62-852-222-444-94',
     icon: 'lucide:phone',
   },
   {
     id: 3,
     label: 'Email',
-    value: 'info@nusaprimaenergi.co.id',
+    value: 'admin@nusaprimaenergi.co.id',
     icon: 'lucide:mail',
   },
   {

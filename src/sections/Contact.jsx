@@ -14,21 +14,23 @@ const Contact = () => {
   const title = contactData?.title
   const description = contactData?.description
 
-  const infoItems = contactData?.items?.length
-    ? contactData.items.map((item, index) => {
-        const parts = item.title.split(':')
-        const label = parts[0] ? parts[0].trim() : "Info"
-        const value = parts[1] ? parts[1].trim() : item.title
-        const defaultInfo = defaultContactInfo[index] || defaultContactInfo[0]
+  // const infoItems = contactData?.items?.length
+  //   ? contactData.items.map((item, index) => {
+  //       const parts = item.title.split(':')
+  //       const label = parts[0] ? parts[0].trim() : "Info"
+  //       const value = parts[1] ? parts[1].trim() : item.title
+  //       const defaultInfo = defaultContactInfo[index] || defaultContactInfo[0]
         
-        return {
-          id: item.id || index,
-          label,
-          value,
-          icon: defaultInfo.icon
-        }
-      })
-    : defaultContactInfo
+  //       return {
+  //         id: item.id || index,
+  //         label,
+  //         value,
+  //         icon: defaultInfo.icon
+  //       }
+  //     })
+  //   : defaultContactInfo
+    
+  const infoItems = defaultContactInfo
 
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
@@ -58,7 +60,7 @@ const Contact = () => {
           {/* Contact Info + Map */}
           <div className="space-y-8">
             {/* Info cards */}
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               {infoItems.map((info) => (
                 <div
                   key={info.id}
