@@ -299,7 +299,7 @@ export const contactInfo = [
   {
     id: 3,
     label: 'Email',
-    value: 'admin@nusaprimaenergi.co.id',
+    value: 'admin@nusaprimaenergi.com',
     icon: 'lucide:mail',
   },
   {
